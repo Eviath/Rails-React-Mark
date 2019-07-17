@@ -1,7 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website Image :
+![Website image](https://i.imgur.com/M0YrUsi.png)
+
+
+## React as Front-End and Ruby on Rails as backend.
+
 
 Things you may want to cover:
 
