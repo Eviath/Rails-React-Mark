@@ -1,0 +1,24 @@
+h1 {
+    color: #E3E3E3;
+    font-family: "Josefin Sans SemiBold", sans-serif;
+    font-style: italic;
+    font-size: 111px;
+    line-height: 95px;
+}
+
+p {
+    color: #F35353;
+    font-size: 37px;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: italic;
+}
+
+.header_name {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: auto;
+}

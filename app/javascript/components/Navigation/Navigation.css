@@ -1,0 +1,39 @@
+.homepage_navigation {
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-self: flex-start;
+    justify-content: space-between;
+}
+
+.navigation_button {
+    background: #0E1726;
+    border-radius: 5px;
+    border: 2px solid rgba(212, 212, 212, 0.2);
+    padding: 5px 85px;
+    /* With this font, you have to add 5px to actually make it in the center */
+    padding-top: 10px;
+    color: #E3E3E3;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.navigation_button--white {
+    align-self: center;
+    background: #F2F2F2;
+    width: fit-content;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    padding: 5px 85px;
+    /* With this font, you have to add 5px to actually make it in the center */
+    padding-top: 10px;
+    color: rgba(12, 23, 38, 0.55);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+}

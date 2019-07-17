@@ -1,0 +1,54 @@
+/* Social Media content wrapper */
+.social_media {
+    min-width: 400px;
+    text-align: center;
+    justify-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 150px;
+}
+
+/* Social Media horizontal line*/
+.social_media hr {
+    border-top: 0;
+    border-bottom: 1px solid #F35353;
+}
+
+/* Social Media text */
+.social_media span {
+    color: #E3E3E3;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+/* Social Media buttons */
+.social_media__buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Social Media link */
+.social_media a {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+/* Social Media - Single button */
+.social_button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #C8C8C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Social Media button icon */
+.social_button img {
+    height: 16px;
+    width: auto;
+}

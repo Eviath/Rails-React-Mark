@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_16_123522) do
+ActiveRecord::Schema.define(version: 2019_07_17_123917) do
+
+  create_table "socials", force: :cascade do |t|
+    t.string "pagename"
+    t.string "imageurl"
+    t.string "pageurl"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "things", force: :cascade do |t|
     t.string "name"

@@ -59,6 +59,4 @@ const structuredSelector = createStructuredSelector({
 
 const mapDispatchToProps = { getThings };
 
-
-
 export default connect(structuredSelector, mapDispatchToProps)(HelloWorld);
