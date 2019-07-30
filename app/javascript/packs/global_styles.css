@@ -3,7 +3,10 @@
     height: 100%;
 }
 
-body {
+body, html {
+    color: #fff;
     width: 100%;
     height: 100%;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
 }
