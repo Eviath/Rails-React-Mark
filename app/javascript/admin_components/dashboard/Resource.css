@@ -1,0 +1,21 @@
+.dashboard__resource_table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.dashboard__resource_table tr:nth-child(even) {
+    background-color:#151c2b;
+}
+
+.dashboard__resource_table tr {
+    width: 100%;
+}
+
+.dashboard__resource_table td {
+
+    padding: 2rem 2rem;
+}
+
+.dashboard__resource {
+
+}

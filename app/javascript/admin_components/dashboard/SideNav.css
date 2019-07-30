@@ -1,0 +1,71 @@
+.dashboard__sidenav {
+    background: #151c2b;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+    width: 7%;
+    height: 70%;
+    border-radius: 0 1rem 1rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button*/
+.dashboard__sidenav .sidenav__btn {
+    margin: 1rem 0;
+    border-radius: 1rem;
+    width: 50px;
+    height: 50px;
+    border: .1rem solid rgba(58, 58, 58, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    padding: 1rem 1rem;
+}
+
+/* Button hidden text */
+.dashboard__sidenav .sidenav__btn .btn__text {
+    display: none;
+}
+
+/* Button icon */
+.dashboard__sidenav .sidenav__btn img {
+    filter: invert(100%);
+    width: 100%;
+    height: auto;
+}
+
+/* ===== Btn on hover ====== */
+
+/* Change background*/
+.dashboard__sidenav .sidenav__btn:hover  {
+    background: #202A41;
+}
+
+.dashboard__sidenav .sidenav__btn:hover img  {
+    filter: invert(1) sepia(1) saturate(115) hue-rotate(280deg);
+}
+
+
+/* ===== BTN ACTIVE =======*/
+/* change width, background and transform when active*/
+.dashboard__sidenav .sidenav__btn.active {
+    background:  #F93C79;
+    width: 150px;
+    transform: translateX(40px);
+}
+
+.dashboard__sidenav .sidenav__btn.active .btn__text {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dashboard__sidenav .sidenav__btn.active img {
+    width: 20%;
+    margin-left: auto;
+}
+

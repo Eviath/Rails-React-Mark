@@ -1,0 +1,56 @@
+.dashboard__header {
+    background:transparent;
+    padding: 3rem 2rem;
+
+    /* Align items */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Header logo */
+.dashboard__header .header__logo h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Poppins SemiBold", sans-serif;
+}
+
+
+/* Header navigation */
+.dashboard__header .header__navigation {
+    background: #202A41;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-left: 100px;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Margin first element of header navigation */
+.dashboard__header .header__navigation a:first-of-type {
+    margin-right: 100px;
+}
+
+/* Color of header navigation link*/
+.dashboard__header .header__navigation a {
+    margin: 0 1rem;
+    color: #fff;
+}
+
+/* Change color of link when active */
+.dashboard__header .header__navigation a.active {
+    color: #F93C79;
+}
+
+/* Header meta */
+.dashboard__header .header__meta {
+    margin-left: auto;
+    display: flex;
+    max-width: 20%;
+    flex: 1;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-evenly;
+}
+

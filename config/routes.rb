@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  namespace :v1, defaults: { format: 'json' } do
-    get 'things', to: 'things#index'
+
+  namespace :admin do
+    resources :socials, only: [:create, :update, :destroy]
+  end
+
+  get '/admin/*page', to: 'admin#index', constraints: ->(req) do
+    !req.xhr? && req.format.html?
+  end
+
+  get '/admin', to: 'admin#index', constraints: ->(req) do
+    !req.xhr? && req.format.html?
   end
 
   namespace :v1, defaults: { format: 'json' } do
     get 'socials', to: 'socials#index'
+    get 'social/:id', to: 'socials#show'
   end
 
   # Forward all requests to StaticController#index but requests
@@ -14,6 +23,10 @@ Rails.application.routes.draw do
   get '*page', to: 'static#index', constraints: ->(req) do
     !req.xhr? && req.format.html?
   end
+
+
   # Forward root to StaticController#index
   root 'static#index'
+
+
 end

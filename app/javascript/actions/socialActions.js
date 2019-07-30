@@ -1,7 +1,7 @@
 export function fetchSocials() {
     return dispatch => {
         dispatch(fetchSocialsBegin());
-        return fetch("v1/socials.json")
+        return fetch("/v1/socials.json")
             .then(response => response.json())
             .then(json => {
                 dispatch(fetchSocialsSuccess(json.socials));
