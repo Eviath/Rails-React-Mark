@@ -2,35 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c614cb0-12ea-4364-b539-32564b300606" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialShow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Breadcrumb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Breadcrumb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Resource.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Resource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/SideNav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/SideNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/admin.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/admin/resources/ResourceEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/admin/resources/ResourceForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/v1/socials_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/v1/socials_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/actions/socialActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/actions/socialActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/global_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/global_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/static/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpacker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/SocialCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/SocialEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/SocialShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialShow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Resource.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/resources/Resource.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/resources/Resource.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,15 +25,6 @@
         <option value="Ruby File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>RailsReact</find>
-      <find>products</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\rails-react-mark\app\javascript\admin\resources" />
       <recent name="C:\code\rails-react-mark\app\views\admin" />
       <recent name="C:\code\rails-react-mark\app\javascript\admin_components" />
       <recent name="C:\code\rails-react-mark\app\javascript\components\Header" />
@@ -183,6 +156,9 @@
       <workItem from="1563391708030" duration="23000" />
       <workItem from="1564223094284" duration="65000" />
       <workItem from="1564491990104" duration="29166000" />
+      <workItem from="1564664248806" duration="66000" />
+      <workItem from="1564745270584" duration="5487000" />
+      <workItem from="1564750917941" duration="4598000" />
     </task>
     <servers />
   </component>
@@ -194,7 +170,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
