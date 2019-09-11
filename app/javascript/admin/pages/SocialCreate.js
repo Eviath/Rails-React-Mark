@@ -33,6 +33,7 @@ class SocialCreate extends React.Component {
         this.setState({ social: {...this.state.social, imageurl: e.target.value }});
     }
 
+
     createSocial() {
         const token = document.querySelector('meta[name="csrf-token"]');
         fetch(`/admin/socials`, {

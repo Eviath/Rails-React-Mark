@@ -4,7 +4,7 @@
     left:0;
     top:0;
     bottom: 0;
-    width: 7%;
+    width: 5%;
     height: 70%;
     border-radius: 0 1rem 1rem 0;
     margin: auto;
@@ -54,7 +54,7 @@
 /* change width, background and transform when active*/
 .dashboard__sidenav .sidenav__btn.active {
     background:  #F93C79;
-    width: 150px;
+    width: 159px;
     transform: translateX(40px);
 }
 

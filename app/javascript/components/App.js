@@ -1,23 +1,23 @@
 import React from "react"
-import {BrowserRouter, Switch, Route} from "react-router-dom"
-import { Provider } from 'react-redux'
-import Home from '../pages/Home'
+import {Provider} from 'react-redux'
 
 import configureStore from '../configureStore'
+
+import AppRootComponent from "./AppRootComponent";
 const store = configureStore();
 
 class App extends React.Component {
-  render () {
+
+    render () {
     return (
         <Provider store={store}>
-          <BrowserRouter>
-            <Switch>
-              <Route exact path="/" component={Home} />
-            </Switch>
-          </BrowserRouter>
+           <AppRootComponent/>
         </Provider>
     );
   }
 }
 
-export default App
+
+export default App;
+
+

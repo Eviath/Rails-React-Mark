@@ -1,0 +1,43 @@
+.login-form-wrapper {
+    width: 50%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form input {
+    width: 40%;
+    margin: 5px;
+    background: rgba(101, 97, 102, 0.59);
+    border: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.32);
+}
+
+.login-form button {
+    background: #fff;
+    padding :10px;
+    border: none;
+    margin: 20px 0;
+    width: 20%;
+
+}

@@ -1,6 +1,9 @@
 import React from "react";
 import {Redirect} from 'react-router-dom'
 
+import { connect } from 'react-redux'
+import { createStructuredSelector } from "reselect";
+import { deleteSocials } from '../../actions/socialActions'
 
 class ResourceEvent extends React.Component {
     constructor(props) {
@@ -11,25 +14,44 @@ class ResourceEvent extends React.Component {
         };
         this.redirectResource = this.redirectResource.bind(this);
         this.deleteResource = this.deleteResource.bind(this);
+        this.formatEvent = this.formatEvent.bind(this);
     }
 
     redirectResource(action) {
-        return this.setState({ navigate: action })
+        return this.setState({ navigate: action, responseUrl: '' })
     }
 
+    deleteResource(resourceId) {
+        this.props.deleteSocials(resourceId);
+    }
 
-    deleteResource(resource, resourceId) {
-        console.log('delete action called');
-        const token = document.querySelector('meta[name="csrf-token"]');
-        fetch(`/admin/${resource}/` + resourceId, {
-            method: 'DELETE',
-            headers: {
-                'X-CSRF-Token': token.content,
-                'Content-Type': 'application/json'
-            }
-        }).then((response) => {
-            this.setState({responseUrl: response.url})
-        })
+    formatEvent() {
+        if(this.props.event_type === 'SHOW') {
+            return (
+                <a className={this.props.event_type} onClick={() => this.redirectResource(this.props.event_type)}>
+                    {this.props.event_type}
+                </a>
+            )
+        }
+
+      if(this.props.event_type === 'EDIT') {
+          return (
+              <a className={this.props.event_type} onClick={() => this.redirectResource(this.props.event_type)}>
+                  {this.props.event_type}
+              </a>
+          )
+        }
+
+      if(this.props.event_type === 'DELETE') {
+          return (
+              <a className="delete" onClick={() => this.deleteResource(this.props.resourceId)}>
+                  DELETE
+              </a> )
+        }
+
+      return (
+          'Event type not recognized'
+      )
     }
 
     render() {
@@ -45,24 +67,18 @@ class ResourceEvent extends React.Component {
             return <Redirect to={`/admin/${this.props.resource}/${this.props.resourceId}/edit`} push={true} />
         }
 
-
-        if(this.props.event_type === 'SHOW' || 'EDIT') {
-            return (
-                <a className={this.props.event_type} onClick={() => this.redirectResource(this.props.event_type)}>
-                    {this.props.event_type}
-                </a>)
-        }
-
-       if(this.props.event_type === 'DELETE') {
-           return (
-               <a className="delete" onClick={() => this.deleteResource(this.props.resource, this.props.resourceId)}>
-                   DELETE
-               </a>
-           )
-        }
+        return (
+            this.formatEvent()
+        )
 
     }
-
 }
 
-export default ResourceEvent
+const structuredSelector = createStructuredSelector({
+    socials: state => state.socials
+});
+
+const mapDispatchToProps = { deleteSocials };
+
+export default connect(structuredSelector, mapDispatchToProps)(ResourceEvent);
+

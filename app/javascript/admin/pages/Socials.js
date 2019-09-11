@@ -51,7 +51,7 @@ class Socials extends React.Component {
 }
 
 const structuredSelector = createStructuredSelector({
-    socials: state => state.socials
+    socials: state => state.social.socials
 });
 
 const mapDispatchToProps = { fetchSocials };
