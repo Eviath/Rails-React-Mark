@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css'
 import { NavLink } from 'react-router-dom';
+import Logout from "../../pages/Logout";
 
 class Header extends React.Component {
     render () {
@@ -14,8 +15,8 @@ class Header extends React.Component {
 
                 <div className={'header__meta'}>
                     <p>Notifications</p>
-                    <p>Jacek Kowalski</p>
-                    <p>Log Out</p>
+                    <p>{this.props.user ? this.props.user.email : 'Not logged in'}</p>
+                    <Logout/>
                 </div>
             </div>
         );

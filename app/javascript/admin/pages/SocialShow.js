@@ -15,9 +15,6 @@ class SocialShow extends React.Component {
             .then(response => {
                 this.setState({ social: response.social } )
             })
-
-
-
     }
 
 

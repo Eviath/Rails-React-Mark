@@ -1,9 +1,12 @@
 import React from "react";
 import './Resource.css'
-import SocialShow from "../../admin/pages/SocialShow";
-import { Link } from 'react-router-dom';
+import ResourceEvent from "./ResourceEvent";
 
 class Resource extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
 
     render () {
         return (
@@ -12,8 +15,9 @@ class Resource extends React.Component {
                    return <td key={key}>{this.props.item[key]}</td>
                 })}
                 <td>
-                    <Link to={`/admin/socials/${this.props.item.id}`}> SHOW </Link>
-                    <Link to={`/admin/socials/${this.props.item.id}/edit`}> EDIT </Link>
+                    <ResourceEvent resource={'socials'} resourceId={this.props.item.id} event_type={'SHOW'}/>
+                    <ResourceEvent resource={'socials'} resourceId={this.props.item.id} event_type={'EDIT'}/>
+                    <ResourceEvent resource={'socials'} resourceId={this.props.item.id} event_type={'DELETE'}/>
                 </td>
 
             </tr>

@@ -2,35 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c614cb0-12ea-4364-b539-32564b300606" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialShow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Breadcrumb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Breadcrumb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Resource.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Resource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/SideNav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/SideNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/admin.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Evidence_PC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/v1/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/actions/globalActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/admin_components/AdminRootComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/AppRootComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/pages/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/pages/Logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/pages/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/reducers/globalReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20190815132410_devise_create_users.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/user_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rails-react-tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-react-tutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/v1/socials_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/v1/socials_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/actions/socialActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/actions/socialActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/global_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/global_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/static/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/SocialCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/SocialCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/pages/Socials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/resources/Resource.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/resources/Resource.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin/resources/ResourceEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin/resources/ResourceEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin_components/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin_components/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/SideNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/admin_components/dashboard/SideNav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/HelloWorld.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/SocialMedia/SocialMedia.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/SocialMedia/SocialMedia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/pages/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/pages/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/reducers/socialReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/reducers/socialReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpacker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,15 +55,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>RailsReact</find>
-      <find>products</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,7 +62,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eviathos-rails" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -69,7 +70,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\rails-react-mark\app\javascript\pages" />
+      <recent name="C:\code\rails-react-mark\app\javascript\actions" />
+      <recent name="C:\code\rails-react-mark\app\javascript\reducers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\rails-react-mark\app\javascript\admin\resources" />
       <recent name="C:\code\rails-react-mark\app\views\admin" />
       <recent name="C:\code\rails-react-mark\app\javascript\admin_components" />
       <recent name="C:\code\rails-react-mark\app\javascript\components\Header" />
@@ -183,6 +190,14 @@
       <workItem from="1563391708030" duration="23000" />
       <workItem from="1564223094284" duration="65000" />
       <workItem from="1564491990104" duration="29166000" />
+      <workItem from="1564664248806" duration="66000" />
+      <workItem from="1564745270584" duration="5487000" />
+      <workItem from="1564750917941" duration="4598000" />
+      <workItem from="1565865148604" duration="12432000" />
+      <workItem from="1565957303989" duration="10231000" />
+      <workItem from="1566036196367" duration="4545000" />
+      <workItem from="1566143432226" duration="540000" />
+      <workItem from="1566325363324" duration="50000" />
     </task>
     <servers />
   </component>
@@ -194,7 +209,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

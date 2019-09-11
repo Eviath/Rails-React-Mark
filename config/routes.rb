@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :users, controllers: { registrations: 'registrations', sessions: 'sessions' }
+
   namespace :admin do
     resources :socials, only: [:create, :update, :destroy]
   end
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
   namespace :v1, defaults: { format: 'json' } do
     get 'socials', to: 'socials#index'
     get 'social/:id', to: 'socials#show'
+    get 'users/current', to: 'users#current'
   end
 
   # Forward all requests to StaticController#index but requests

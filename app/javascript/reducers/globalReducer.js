@@ -1,21 +1,16 @@
 import {
-    FETCH_SOCIALS_BEGIN,
-    FETCH_SOCIALS_SUCCESS,
-    FETCH_SOCIALS_FAILURE,
-    DELETE_SOCIALS_BEGIN,
-    DELETE_SOCIALS_FAILURE,
-    DELETE_SOCIALS_SUCCESS
-} from '../actions/socialActions';
+    FETCH_USER_BEGIN,
+    FETCH_USER_SUCCESS,
+    FETCH_USER_FAILURE,
+} from '../actions/globalActions';
 
 const initialState = {
-    socials: [],
-    loading: false,
-    error: null
+    user: []
 };
 
-export default function socialReducer(state = initialState, action) {
+export default function globalReducer(state = initialState, action) {
     switch(action.type) {
-        case FETCH_SOCIALS_BEGIN:
+        case FETCH_USER_BEGIN:
             // Mark the state as "loading" so we can show a spinner or something
             // Also, reset any errors. We're starting fresh.
             return {
@@ -24,16 +19,16 @@ export default function socialReducer(state = initialState, action) {
                 error: null
             };
 
-        case FETCH_SOCIALS_SUCCESS:
+        case FETCH_USER_SUCCESS:
             // All done: set loading "false".
             // Also, replace the items with the ones from the server
             return {
                 ...state,
                 loading: false,
-                socials: action.payload.socials
+                user: action.payload.user
             };
 
-        case FETCH_SOCIALS_FAILURE:
+        case FETCH_USER_FAILURE:
             // The request failed. It's done. So set loading to "false".
             // Save the error, so we can display it somewhere.
             // Since it failed, we don't have items to display anymore, so set `items` empty.
@@ -45,29 +40,7 @@ export default function socialReducer(state = initialState, action) {
                 ...state,
                 loading: false,
                 error: action.payload.error,
-                socials: []
-            };
-
-        case DELETE_SOCIALS_BEGIN:
-            return {
-                ... state,
-                loading: true,
-                error: null
-            };
-
-        case DELETE_SOCIALS_SUCCESS:
-            return {
-                ... state,
-                loading: false,
-                socials: action.payload.socials
-            };
-
-        case DELETE_SOCIALS_FAILURE:
-            return {
-                ...state,
-                loading: false,
-                error: action.payload.error,
-                socials: []
+                user: []
             };
 
         default:
